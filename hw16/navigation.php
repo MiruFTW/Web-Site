@@ -1,0 +1,69 @@
+<?php
+echo '<nav>';
+echo '<ul class="nav nav-justified">';
+if (!isset($_GET['page'])) // page does not exist on initial load
+{
+	echo '<li class="active"><a href="../hw16/index.php">Home</a></li>';
+	echo '<li><a href="../hw16/index.php?page=work">Work</a></li>';
+	echo '<li><a href="../hw16/index.php?page=school">School</a></li>';
+	echo '<li><a href="../hw16/index.php?page=hobbies">Hobbies</a></li>';
+	echo '<li><a href="../hw16/index.php?page=movies">Movies</a></li>';
+	echo '<li><a href="../hw16/index.php?page=contact">Contact</a></li>';
+}
+else // page vairable does exist use switch to for different pages
+{
+	switch($_GET['page'])
+	{
+		case "work":
+			echo '<li><a href="../hw16/index.php">Home</a></li>';
+			echo '<li class="active"><a href="../hw16/index.php?page=work">Work</a></li>';
+			echo '<li><a href="../hw16/index.php?page=school">School</a></li>';
+			echo '<li><a href="../hw16/index.php?page=hobbies">Hobbies</a></li>';
+			echo '<li><a href="../hw16/index.php?page=movies">Movies</a></li>';
+			echo '<li><a href="../hw16/index.php?page=contact">Contact</a></li>';
+			break;
+		case "school":
+			echo '<li><a href="../hw16/index.php">Home</a></li>';
+			echo '<li><a href="../hw16/index.php?page=work">Work</a></li>';
+			echo '<li class="active"><a href="../hw16/index.php?page=school">School</a></li>';
+			echo '<li><a href="../hw16/index.php?page=hobbies">Hobbies</a></li>';
+			echo '<li><a href="../hw16/index.php?page=movies">Movies</a></li>';
+			echo '<li><a href="../hw16/index.php?page=contact">Contact</a></li>';
+			break;
+		case "hobbies":
+			echo '<li><a href="../hw16/index.php">Home</a></li>';
+			echo '<li><a href="../hw16/index.php?page=work">Work</a></li>';
+			echo '<li><a href="../hw16/index.php?page=school">School</a></li>';
+			echo '<li class="active"><a href="../hw16/index.php?page=hobbies">Hobbies</a></li>';
+			echo '<li><a href="../hw16/index.php?page=movies">Movies</a></li>';
+			echo '<li><a href="../hw16/index.php?page=contact">Contact</a></li>';
+			break;
+		case "movies":
+			echo '<li><a href="../hw16/index.php">Home</a></li>';
+			echo '<li><a href="../hw16/index.php?page=work">Work</a></li>';
+			echo '<li><a href="../hw16/index.php?page=school">School</a></li>';
+			echo '<li><a href="../hw16/index.php?page=hobbies">Hobbies</a></li>';
+			echo '<li class="active"><a href="../hw16/index.php?page=movies">Movies</a></li>';
+			echo '<li><a href="../hw16/index.php?page=contact">Contact</a></li>';
+			break;
+		case "contact":
+			echo '<li><a href="../hw16/index.php">Home</a></li>';
+			echo '<li><a href="../hw16/index.php?page=work">Work</a></li>';
+			echo '<li><a href="../hw16/index.php?page=school">School</a></li>';
+			echo '<li><a href="../hw16/index.php?page=hobbies">Hobbies</a></li>';
+			echo '<li><a href="../hw16/index.php?page=movies">Movies</a></li>';
+			echo '<li class="active"><a href="../hw16/index.php?page=contact">Contact</a></li>';
+			break;
+		default:
+			echo '<li class="active"><a href="../hw16/index.php">Home</a></li>';
+			echo '<li><a href="../hw16/index.php?page=work">Work</a></li>';
+			echo '<li><a href="../hw16/index.php?page=school">School</a></li>';
+			echo '<li><a href="../hw16/index.php?page=hobbies">Hobbies</a></li>';
+			echo '<li><a href="../hw16/index.php?page=movies">Movies</a></li>';
+			echo '<li><a href="../hw16/index.php?page=contact">Contact</a></li>';
+			break;
+	}
+}
+echo '</ul>';
+echo '</nav>';
+?>

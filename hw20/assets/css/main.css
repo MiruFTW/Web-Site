@@ -1,0 +1,42 @@
+/* CSS Document */
+body {
+
+}
+h1 {
+
+}
+p {
+
+}
+.Home {
+	background-color: cyan;
+	text-align: center;
+}
+.global-table {
+	width: 100%;
+}
+.menu-bar {
+	background-color: lightgrey;
+	text-align: center;
+}
+.nested-table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.nested-table td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.nested-table tr {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+a {
+	color: purple;
+	text-align: center;
+	text-decoration: none;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
